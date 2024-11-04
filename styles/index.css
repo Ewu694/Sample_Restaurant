@@ -1,0 +1,46 @@
+body {
+    background-color: white;
+}
+
+.italy-red {
+    color: #8b3422;
+}
+
+.navbar-brand {
+    color: #8b3422;
+}
+
+.navbar-brand:hover {
+    color: #dbab85;
+}
+
+.nav-link {
+    color: #6f7714;
+}
+
+.nav-link:hover {
+    color: #8b3422;
+}
+
+.navbar-text {
+    color: red;
+}
+
+.navbar-toggler {
+    border-radius: 2rem;
+    border-width: 4px;
+    border-color: #6f7714; /* Change the border color */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(139, 52, 34, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Change the icon color */
+}
+
+.card-title {
+    color: #6f7714; 
+}
+
+.btn-danger:hover {
+    background-color: #dbab85;
+    border-color: #dbab85;
+}
