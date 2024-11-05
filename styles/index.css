@@ -2,6 +2,10 @@ body {
     background-color: white;
 }
 
+.navbar {
+    background-color: white;
+}
+
 .italy-red {
     color: #8b3422;
 }
@@ -71,7 +75,7 @@ body {
 }
 
 .hero .display-4 {
-    font-size: 4.5rem;
+    font-size: 3rem; 
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
@@ -83,11 +87,12 @@ body {
 .hero .lead {
     color: white;
     margin-bottom: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.6;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
 
 .hero .btn-danger {
     padding: 1rem 2.5rem;
@@ -174,9 +179,4 @@ body {
     color: #6f7714;
     font-weight: 700;
     margin-top: 1rem;
-}
-
-.btn-danger:hover {
-    background-color: #dbab85;
-    border-color: #dbab85;
 }
