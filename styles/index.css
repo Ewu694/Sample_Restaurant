@@ -6,6 +6,11 @@ body {
     color: #8b3422;
 }
 
+.italy-green{
+    color: #6f7714;
+}
+
+
 .navbar-brand {
     color: #8b3422;
 }
@@ -37,15 +42,138 @@ body {
 }
 
 .full-height {
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+.full-height::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../assets/Images/hero-background.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero .container {
+    padding: 3rem;
+    max-width: 800px;
+}
+
+.hero .display-4 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.hero .lead {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero .btn-danger {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #8b3422;
+    border-color: #8b3422;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero .btn-danger:hover {
+    background-color: #dbab85;
+    border-color: #dbab85;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
 }
 
 .menu-title {
-    color: #dbab85;
+    color: #8b3422;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-item-content {
+    flex: 1;
+}
+
+.menu-item-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title.italy-red {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.card-text {
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #6f7714;
+    font-weight: 700;
+    margin-top: 1rem;
 }
 
 .btn-danger:hover {
